@@ -4,7 +4,7 @@
 
 # INSTRUCTIONS
 
-- create development.json in config file
+- create development.json in the config file
 - MYSQL DATABASE SET UP
 
 ```
@@ -19,7 +19,13 @@
 
 * **npm start**
 
-to start the server at port 5000
+To start the server at port 5000
+
+=======================
+
+# ROUTES
+
+=======================
 
 1. **/episodes**
 

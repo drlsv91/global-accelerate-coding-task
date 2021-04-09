@@ -14,9 +14,9 @@ const seed_1 = __importDefault(require("./seeders/seed"));
 const app = express_1.default();
 app.use(body_parser_1.json());
 // routes
-app.use('/episodes', episodes_1.default);
-app.use('/comments', comments_1.default);
-app.use('/characters', characters_1.default);
+app.use('/api/episodes', episodes_1.default);
+app.use('/api/comments', comments_1.default);
+app.use('/api/characters', characters_1.default);
 app.use((err, req, res, next) => {
     res.json({ message: err.message });
 });

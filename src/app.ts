@@ -11,9 +11,9 @@ const app = express()
 app.use(json())
 
 // routes
-app.use('/episodes', episodeRoutes)
-app.use('/comments', commentRoutes)
-app.use('/characters', characterRoutes)
+app.use('/api/episodes', episodeRoutes)
+app.use('/api/comments', commentRoutes)
+app.use('/api/characters', characterRoutes)
 
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
   res.json({ message: err.message })

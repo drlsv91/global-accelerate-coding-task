@@ -24,7 +24,7 @@ app.use((err, req, res, next) => {
 association_1.default();
 // initialize database
 database_1.default
-    .sync()
+    .sync({ force: true })
     .then((res) => {
     seed_1.default();
     console.log('successfully initialized');

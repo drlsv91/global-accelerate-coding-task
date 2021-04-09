@@ -23,7 +23,7 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
 createAssociation()
 // initialize database
 sequelize
-  .sync()
+  .sync({ force: true })
   .then((res) => {
     seed()
     console.log('successfully initialized')

@@ -4,7 +4,7 @@
 
 # INSTRUCTIONS
 
-- create development.json in the config file
+- create development.json file in the config folder
 - MYSQL DATABASE SET UP
 
 ```
@@ -141,7 +141,7 @@ http://localhost:5000/api/characters/1/episodes
 
 ```
 
-5. **characters/1/episodes**
+5. **episodes/1/comments**
 
 Returns the just created comment by in the episode with the id=1
 
@@ -164,22 +164,11 @@ http://localhost:5000/api/episodes/1/comments
 
 ```
 [
-    {
-        "id": 1,
-        "name": "Episode 1",
-        "releaseDate": "...",
-        "episodeCode": "...",
-        "created": "...",
-        "createdAt": "...",
-        "updatedAt": "...",
-        "CharactersEpisode": {
-            "id": 2,
-            "characterId": 1,
-            "episodeId": ...,
-            "createdAt": "...",
-            "updatedAt": "..."
-        }
-    },
+   {
+    "comment":"...",
+    "ipAddressLocation":"...",
+    "created":"..."
+}
 ]
 
 ```
